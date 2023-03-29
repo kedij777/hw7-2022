@@ -63,13 +63,12 @@ document.querySelector("#slider").addEventListener("input", function(){
 	video.volume = volume;
 });
 
-// make the video black and white
 document.querySelector("#vintage").addEventListener("click",function(){
-	video.style.filter = 'grayscale(100%)';
+	video.classList.add('oldSchool');
 })
 
 document.querySelector("#orig").addEventListener("click",function(){
-	video.style.filter = 'grayscale(0%)';
+	video.classList.remove('oldSchool');
 })
 
 
